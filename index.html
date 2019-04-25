@@ -1,12 +1,457 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
-</head>
-<body>
-	我是一个页面
-</body>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>选择时间</title>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <div id="seletime">
+                <div id="calemask0"></div>
+                <div id="calemask1"></div>
+                <div id="calemask2"></div>
+                <div id="calemask3"></div>
+            <table class="calendar-table">
+                <thead class="calendar-head">
+                    <tr>
+                        <th rowspan="8" class="week-td">星期/时间</th>
+                        <th colspan="24">00:00-12:00</th>
+                        <th colspan="24">12:00-24:00</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">0</td>
+                        <td colspan="2">1</td>
+                        <td colspan="2">2</td>
+                        <td colspan="2">3</td>
+                        <td colspan="2">4</td>
+                        <td colspan="2">5</td>
+                        <td colspan="2">6</td>
+                        <td colspan="2">7</td>
+                        <td colspan="2">8</td>
+                        <td colspan="2">9</td>
+                        <td colspan="2">10</td>
+                        <td colspan="2">11</td>
+                        <td colspan="2">12</td>
+                        <td colspan="2">13</td>
+                        <td colspan="2">14</td>
+                        <td colspan="2">15</td>
+                        <td colspan="2">16</td>
+                        <td colspan="2">17</td>
+                        <td colspan="2">18</td>
+                        <td colspan="2">19</td>
+                        <td colspan="2">20</td>
+                        <td colspan="2">21</td>
+                        <td colspan="2">22</td>
+                        <td colspan="2">23</td>
+                    </tr>
+                </thead>
+                <tbody class="calendar-body" id="calendarid">
+                    <tr>
+                        <td id="aa">星期一</td>
+                        <td data-week='0' data-time='0' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='1' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='2' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='3' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='4' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='5' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='6' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='7' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='8' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='9' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='10' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='11' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='12' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='13' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='14' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='15' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='16' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='17' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='18' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='19' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='20' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='21' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='22' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='23' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='24' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='25' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='26' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='27' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='28' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='29' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='30' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='31' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='32' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='33' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='34' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='35' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='36' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='37' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='38' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='39' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='40' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='41' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='42' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='43' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='44' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='45' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='46' class="calendar-atom-time"></td>
+                        <td data-week='0' data-time='47' class="calendar-atom-time"></td>
+                    </tr>
+                    <tr>
+                        <td>星期二</td>
+                        <td data-week='1' data-time='0' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='1' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='2' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='3' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='4' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='5' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='6' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='7' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='8' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='9' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='10' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='11' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='12' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='13' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='14' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='15' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='16' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='17' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='18' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='19' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='20' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='21' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='22' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='23' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='24' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='25' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='26' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='27' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='28' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='29' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='30' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='31' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='32' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='33' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='34' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='35' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='36' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='37' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='38' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='39' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='40' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='41' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='42' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='43' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='44' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='45' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='46' class="calendar-atom-time"></td>
+                        <td data-week='1' data-time='47' class="calendar-atom-time"></td>
+                    </tr>
+                    <tr>
+                        <td>星期三</td>
+                        <td data-week='2' data-time='0' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='1' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='2' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='3' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='4' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='5' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='6' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='7' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='8' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='9' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='10' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='11' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='12' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='13' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='14' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='15' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='16' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='17' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='18' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='19' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='20' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='21' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='22' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='23' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='24' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='25' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='26' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='27' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='28' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='29' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='30' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='31' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='32' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='33' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='34' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='35' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='36' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='37' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='38' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='39' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='40' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='41' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='42' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='43' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='44' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='45' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='46' class="calendar-atom-time"></td>
+                        <td data-week='2' data-time='47' class="calendar-atom-time"></td>
+                    </tr>
+                    <tr>
+                        <td>星期四</td>
+                        <td data-week='3' data-time='0' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='1' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='2' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='3' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='4' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='5' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='6' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='7' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='8' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='9' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='10' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='11' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='12' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='13' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='14' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='15' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='16' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='17' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='18' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='19' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='20' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='21' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='22' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='23' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='24' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='25' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='26' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='27' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='28' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='29' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='30' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='31' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='32' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='33' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='34' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='35' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='36' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='37' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='38' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='39' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='40' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='41' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='42' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='43' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='44' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='45' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='46' class="calendar-atom-time"></td>
+                        <td data-week='3' data-time='47' class="calendar-atom-time"></td>
+                    </tr>
+                    <tr>
+                        <td>星期五</td>
+                        <td data-week='4' data-time='0' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='1' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='2' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='3' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='4' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='5' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='6' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='7' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='8' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='9' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='10' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='11' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='12' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='13' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='14' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='15' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='16' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='17' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='18' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='19' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='20' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='21' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='22' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='23' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='24' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='25' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='26' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='27' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='28' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='29' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='30' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='31' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='32' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='33' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='34' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='35' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='36' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='37' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='38' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='39' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='40' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='41' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='42' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='43' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='44' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='45' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='46' class="calendar-atom-time"></td>
+                        <td data-week='4' data-time='47' class="calendar-atom-time"></td>
+                    </tr>
+                    <tr>
+                        <td>星期六</td>
+                        <td data-week='5' data-time='0' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='1' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='2' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='3' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='4' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='5' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='6' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='7' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='8' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='9' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='10' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='11' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='12' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='13' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='14' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='15' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='16' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='17' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='18' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='19' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='20' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='21' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='22' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='23' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='24' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='25' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='26' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='27' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='28' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='29' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='30' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='31' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='32' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='33' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='34' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='35' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='36' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='37' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='38' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='39' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='40' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='41' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='42' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='43' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='44' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='45' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='46' class="calendar-atom-time"></td>
+                        <td data-week='5' data-time='47' class="calendar-atom-time"></td>
+                    </tr>
+                    <tr>
+                        <td>星期天</td>
+                        <td data-week='6' data-time='0' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='1' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='2' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='3' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='4' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='5' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='6' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='7' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='8' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='9' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='10' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='11' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='12' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='13' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='14' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='15' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='16' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='17' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='18' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='19' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='20' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='21' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='22' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='23' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='24' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='25' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='26' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='27' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='28' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='29' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='30' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='31' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='32' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='33' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='34' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='35' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='36' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='37' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='38' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='39' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='40' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='41' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='42' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='43' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='44' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='45' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='46' class="calendar-atom-time"></td>
+                        <td data-week='6' data-time='47' class="calendar-atom-time"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="49" class="td-table-tip">
+                            <div>
+                                <span id="choicetext">可拖动鼠标进行时间段选择</span>
+                                <span id="unchoice">清除选择</span>
+                            </div>
+                            <div id="td-selected-time">
+                                <p>
+                                    <span class="tip-text">星期一：</span> 
+                    
+                                </p>
+                                <p>
+                                    <span class="tip-text">星期二：</span> 
+                                    
+                                </p>
+                                <p>
+                                    <span class="tip-text">星期三：</span> 
+                                    
+                                </p>
+                                <p>
+                                    <span class="tip-text">星期四：</span> 
+                                    
+                                </p>
+                                <p>
+                                    <span class="tip-text">星期五：</span> 
+                                    
+                                </p>
+                                <p>
+                                    <span class="tip-text">星期六：</span> 
+                                    
+                                </p>
+                                <p>
+                                    <span class="tip-text">星期天：</span> 
+                                    
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- <input id="getdata" type="button" name="appoint_time" value=""> -->
+        <script src="./js/jquery-1.12.4.min.js"></script>
+        <script src="./js/index.js"></script>
+        <!-- <script src="./js/test.js"></script> -->
+        <script>
+            window.onload=function(){
+                seletime();
+            }
+        </script>
+    </body>
 </html>

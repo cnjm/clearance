@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#seletime{
+    position: relative;
+    display: block;
+    color: #333333;
+    margin-left: 104px;
+    margin-bottom: 32px;
+    margin-top: 10px;
+    -o-user-select: none;
+    -moz-user-select: none; /*火狐 firefox*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -ms-user-select: none; /*IE10+*/
+    -khtml-user-select :none; /*早期的浏览器*/
+    user-select: none; 
+    width: 650px;
+}
+
+.calendar-table{
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: transparent;
+    border-color: grey;
+    font-size: 14px;
+}
+.calendar-head{
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.calendar-head .week-td {
+    width: 70px;
+}
+.calendar-body{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.calendar-atom-time {
+    background: #f5f5f5;
+}
+.selected{
+    background: #598FE6;
+}
+.calendar-table tr, .calendar-table td, .calendar-table th{
+    border: 1px solid #DEE4F5;
+    font-size: 12px;
+    text-align: center;
+    min-width: 12px;
+    line-height: 1.8em;
+    -webkit-transition: background 200ms ease;
+    -moz-transition: background 200ms ease;
+    -ms-transition: background 200ms ease;
+    transition: background 200ms ease;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+th {
+    font-weight: bold;
+    text-align: -internal-center;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+#calemask0, #calemask1, #calemask2, #calemask3{
+    display: none;
+    position: absolute;
+    z-index: 99;
+    width: 100px;
+    height: 100px;
+    background: #598fe5;
+    opacity: 0.6;
+}
+#choicetext{
+    float: left;
+    color: #999999;
+    font-size: 12px;
+    text-align: center;
+}
+#unchoice{
+    float: right;
+    color: #598FE6;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+}
+.td-table-tip{
+    line-height: 2.4em;
+    padding: 0 10px;
+}
+#td-selected-time{
+    clear: both;
+    color: #333333;
+    text-align: left;
+    line-height: 2.4em;
+}
+#td-selected-time p{
+    display: none;
+}
+#td-selected-time p span{
+    margin-right: 10px;
+    /* float: left; */
+}

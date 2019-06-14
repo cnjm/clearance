@@ -209,10 +209,17 @@ let mv= new Vue({
         },
         share(){//点击分享
             let str=window.location.href;
-            let input=this.$refs.input;
+            let input=document.createElement('input');
             input.value=str;
+            document.body.append(input);
             input.select();
-            document.execCommand("Copy");
+            try{
+                document.execCommand("Copy");
+            }catch{
+                
+                console.log("您的浏览器不支持复制功能");
+            }
+            document.body.removeChild(input);
             alert("已复制地址，赶紧粘贴发送给小伙伴吧！")
             this.$refs.showall.style.display="none";
         }

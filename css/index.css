@@ -48,6 +48,7 @@ ul, ol { list-style: none; }
     color: #ccdff0;
     padding: 15px 15px 15px 15px;
     position: relative;
+    z-index: 1;
 }
 .app_top{
     display: flex;
@@ -183,4 +184,13 @@ ul, ol { list-style: none; }
 .showz div:hover{
     color: #ffffff;
     background: #4d8be9;
+}
+
+#input{
+    position: absolute;
+    right: 0px;
+    width: 1px;
+    height: 1px;
+    bottom: 4px;
+    z-index: 0;
 }

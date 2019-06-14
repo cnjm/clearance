@@ -44,8 +44,8 @@ ul, ol { list-style: none; }
  }
 #app{
     margin: 50px auto;
-    background: #7c838a;
-    color: #ccdff0;
+    background: #303235;
+    color: #ffffff;
     padding: 15px 15px 15px 15px;
     position: relative;
     z-index: 1;
@@ -68,7 +68,7 @@ ul, ol { list-style: none; }
 
 
 .app_con{
-    background: #a7b1bb;
+    background: #eceaea;
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -92,58 +92,63 @@ ul, ol { list-style: none; }
     -moz-box-shadow:0px 0px 3px #164885;
      -webkit-box-shadow:0px 0px 3px #164885; 
      box-shadow:0px 0px 3px #164885;
+     background: url(../image/bg4.jpg);
+     background-repeat:no-repeat;
+     background-position: 0px 0px;
 }
 .app_con ul .calculanum0{
     background: #ffffff;
-    background-image: url(../image/sm.png);
+    background-image: url(../image/sm.png)!important;
+    background-position: 0px 0px !important;
 }
 .app_con ul .calculanum1{
-    background: #ffffff;
+    background: #ffffff!important;
     color: #424e9a;
 }
 .app_con ul .calculanum2{
-    background: #ffffff;
+    background: #ffffff!important;
     color: #215f12;
 }
 .app_con ul .calculanum3{
-    background: #ffffff;
+    background: #ffffff!important;
     color: #7b2032;
 }
 .app_con ul .calculanum4{
-    background: #ffffff;
+    background: #ffffff!important;
     color: #07075d;
 }
 .app_con ul .calculanum5{
-    background: #ffffff;
+    background: #ffffff!important;
     color: #3a1e2d;
 }
 .app_con ul .calculanum6{
-    background: #ffffff;
+    background: #ffffff!important;
     color: #e04196;
 }
 .app_con ul .calculanum7{
-    background: #ffffff;
+    background: #ffffff!important;
     color: #f11616;
 }
 .app_con ul .calculanum8{
-    background: #ffffff;
+    background: #ffffff!important;
     color: #ec8d0f;
 }
 .app_con ul .iscalcula{
     background: #ffffff;
-    background-image: url(../image/thun.png);
-    background-repeat:no-repeat;
-    background-position : center center;
+    background-image: url(../image/thun.png)!important;
+    background-repeat:no-repeat!important;
+    background-position : center center!important;
+
 }
 .app_con ul .issusp{
-    background-image: url(../image/issus.png);
-    background-repeat:no-repeat;
-    background-position : center center;
+    background-image: url(../image/issus.png)!important;
+    background-repeat:no-repeat!important;
+    background-position : center center!important;
 }
 .app_con ul .isokthun{
-    background-image: url(../image/isok.png);
-    background-repeat:no-repeat;
-    background-position : center center;
+    background-image: url(../image/isok.png)!important;
+    background-repeat:no-repeat!important;
+    background-position : center center!important;
 }
 
 

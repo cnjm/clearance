@@ -15,6 +15,7 @@ let mv= new Vue({
             thunnum:10,//雷个数
             calculanum:0,//用于计算
             timer:null,//dingshiqi
+            bgurl:"",//背景图
         }
     },
     watch:{
@@ -37,6 +38,12 @@ let mv= new Vue({
                 this.$refs.showall.style.display="block";
                 this.$refs.showt.innerHTML="恭喜你，获得了胜利";
             }
+        },
+        bgurl(val,oldval){
+            for(let i=0;i<this.$refs.thunlist.length;i++){
+                this.$refs.thunlist[i].style.background=val;
+            }
+            this.stylebuti();//跟着改
         }
     },
     computed:{
@@ -157,6 +164,9 @@ let mv= new Vue({
                 this.$refs.thunlist[i].className ="";
                 this.$refs.thunlist[i].innerHTML="";
             }
+            let rand = parseInt(Math.random()*5); //随机改个背景
+            this.bgurl="url(./image/bg"+rand+".jpg)";
+            console.log(this.bgurl)
         },
         showthunall(){//游戏失败显示所有雷
             for(let i=0;i<this.thunline;i++){
@@ -221,12 +231,33 @@ let mv= new Vue({
             document.body.removeChild(input);
             alert("已复制地址，赶紧粘贴发送给小伙伴吧！")
             this.$refs.showall.style.display="none";
+        },
+
+        //关于好看的样式
+        stylebuti(){
+            console.log(0)
+            let numx=0;
+            let numy=0;
+            for(let i=0;i<this.thunline;i++){
+                for(let j=0;j<this.thuncol;j++){//可以在这里设置渐变色的界面
+                    if(this.$refs.thunlist[i*this.thuncol+j].className==""){
+                        numx=-36*i;
+                        numy=-36*j;
+                        console.log(numx);
+                        console.log(numy);
+                        this.$refs.thunlist[i*this.thuncol+j].style.backgroundPosition= numy+"px" +" "+ numx+"px";
+                    }else{
+                        this.$refs.thunlist[i*this.thuncol+j].style.backgroundPosition= "0px 0px";
+                    }
+                   
+                }
+            }
         }
     },
     created:function(){
         this.initdata(this.liv);
     },
     mounted:function(){
-        console.log(this.$refs.thunlist[0]);//可以在这里设置渐变色的界面
+        this.stylebuti();//节点能拿到了就改好看的颜色
     }
 })

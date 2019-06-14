@@ -1,0 +1,186 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, 
+strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, 
+tfoot, thead, tr, th, td ,textarea,input { margin:0; padding:0;  }
+address,cite,dfn,em,var, i {font-style:normal;}
+body {font-size: 16px; line-height: 1.5; font-family:'Microsoft Yahei','simsun','arial','tahoma';  color: #333; }
+table { border-collapse:collapse; border-spacing:0; }
+h1, h2, h3, h4, h5, h6, th { font-size: 100%; font-weight: normal; }
+button,input,select,textarea{font-size:100%;}
+fieldset,img{border:0;}
+a,
+img {
+    -webkit-touch-callout: none
+}
+a,
+a:active,
+a:focus,
+a:hover,
+a:visited {text-decoration: none}
+input[type=password],
+input[type=text],
+textarea {
+    resize: none;
+    outline: 0;
+    -webkit-appearance: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    background: #fff
+}
+ul, ol { list-style: none; }
+:focus{ outline:none;}
+.clearfix{ clear: both; content: ""; display: block; overflow: hidden }
+.clear{clear: both;}
+.fl{ float: left; }
+.fr{float: right;}
+
+
+/* 开始 */
+.icon {
+    width: 32px; 
+    height: 32px;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+ }
+#app{
+    margin: 50px auto;
+    background: #7c838a;
+    color: #ccdff0;
+    padding: 15px 15px 15px 15px;
+    position: relative;
+}
+.app_top{
+    display: flex;
+    justify-content: space-between;
+}
+.app_top_box{
+    display: flex;
+}
+.app_icon{
+    width: 32px;
+    height: 32px;
+}
+.app_words{
+    line-height: 32px;
+    margin-left: 10px;
+}
+
+
+.app_con{
+    background: #a7b1bb;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 15px;
+}
+.app_con ul{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+.app_con ul li{
+    width: 32px;
+    height: 32px;
+    background: #3c4fc5;
+    border: #1f3185 2px solid;
+    text-align: center;
+    line-height: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select:none;
+    -moz-box-shadow:0px 0px 3px #164885;
+     -webkit-box-shadow:0px 0px 3px #164885; 
+     box-shadow:0px 0px 3px #164885;
+}
+.app_con ul .calculanum0{
+    background: #ffffff;
+    background-image: url(../image/sm.png);
+}
+.app_con ul .calculanum1{
+    background: #ffffff;
+    color: #424e9a;
+}
+.app_con ul .calculanum2{
+    background: #ffffff;
+    color: #215f12;
+}
+.app_con ul .calculanum3{
+    background: #ffffff;
+    color: #7b2032;
+}
+.app_con ul .calculanum4{
+    background: #ffffff;
+    color: #07075d;
+}
+.app_con ul .calculanum5{
+    background: #ffffff;
+    color: #3a1e2d;
+}
+.app_con ul .calculanum6{
+    background: #ffffff;
+    color: #e04196;
+}
+.app_con ul .calculanum7{
+    background: #ffffff;
+    color: #f11616;
+}
+.app_con ul .calculanum8{
+    background: #ffffff;
+    color: #ec8d0f;
+}
+.app_con ul .iscalcula{
+    background: #ffffff;
+    background-image: url(../image/thun.png);
+    background-repeat:no-repeat;
+    background-position : center center;
+}
+.app_con ul .issusp{
+    background-image: url(../image/issus.png);
+    background-repeat:no-repeat;
+    background-position : center center;
+}
+.app_con ul .isokthun{
+    background-image: url(../image/isok.png);
+    background-repeat:no-repeat;
+    background-position : center center;
+}
+
+
+#showall{
+    display: none;
+    position: absolute;
+    width: 220px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -110px;
+    background: #584b4b;
+    opacity: 0.85;
+    border-radius: 5px;
+    color: #ffffff;
+}
+.showt{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 2px #bcc2db solid;
+    margin-bottom: 4px;
+}
+.showz{
+    width: 220px;
+    height: 50px;
+}
+.showz div{
+    float: left;
+    width: 110px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.showz div:hover{
+    color: #ffffff;
+    background: #4d8be9;
+}

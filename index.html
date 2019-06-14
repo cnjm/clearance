@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>扫雷</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div id="app" >
+        <div class="app_top">
+            <div class="app_top_box">
+                <div class="app_icon">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-shizhong_f"></use>
+                    </svg>
+                </div>
+                <div class="app_words">
+                    {{gametime}}秒
+                </div>
+            </div>
+            <div class="app_top_box" @click="newgame">
+                <div class="app_icon">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-biaoqing-weixiao-tianchong"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="app_top_box">
+                <div class="app_icon">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-zhadan"></use>
+                    </svg>
+                </div>
+                <div class="app_words">
+                    {{thundernum}}
+                </div>
+            </div>
+        </div>
+        <div class="app_con">
+            <ul v-for="(item,index) in thunarr">
+                <li v-for="(colitem,colindex) in item" @click="clickthun(index,colindex,$event.target)"
+                ref="thunlist" @contextmenu.prevent="clickr(index,colindex,$event)">
+                    <!-- {{colitem}} -->
+                </li>
+            </ul>
+        </div>
+        <div id="showall" ref="showall">
+            <div class="showt" ref="showt">
+                你完蛋了，你这个菜鸟！
+            </div>
+            <div class="showz">
+                <div @click="newgame">重玩</div>
+                <div @click="share">分享</div>
+            </div>
+        </div>
+        <input style="display: none" type="text" name="" ref="input" value="">
+        
+    </div>
+
+    <script src="http://at.alicdn.com/t/font_1235511_ux2jwqfxucb.js"></script>
+    <!-- 生产环境版本，优化了尺寸和速度 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

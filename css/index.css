@@ -77,7 +77,7 @@ ul, ol { list-style: none; }
 .app_con ul{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2px;
+    margin-bottom: 0px;
 }
 .app_con ul li{
     width: 32px;

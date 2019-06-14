@@ -86,11 +86,11 @@ let mv= new Vue({
                 }
             }
         },
-        changeHW(num){//根据级别改变样式
+        changeHW(num){//暂时没有。根据级别改变样式
             let vueapp=document.querySelector("#app");
             switch(num) {
                 case 0:
-                   vueapp.style.width=360+'px';
+                   vueapp.style.width=344+'px';
                 //    vueapp.style.height=500+'px';
                    break;
                 case 1:
@@ -176,7 +176,8 @@ let mv= new Vue({
         clickr(index,colindex,ele){//右键插旗
             if(ele.button==2){
                 if(ele.target.className ==""){
-                    if(this.thundernum<=0){//插了十个旗子就不能继续啦
+                    if(this.thundernum<=0){//插了十个旗子就不能继续啦,只能给问号
+                        ele.target.className ="issusp";//不进行其他判断
                         return;
                     }
                     ele.target.className ="isokthun";
@@ -205,7 +206,6 @@ let mv= new Vue({
                     this.ischangenum-=1;
                 }
             }
-            
         },
         share(){//点击分享
             let str=window.location.href;
@@ -216,8 +216,7 @@ let mv= new Vue({
             try{
                 document.execCommand("Copy");
             }catch{
-                
-                console.log("您的浏览器不支持复制功能");
+                alert("您的浏览器不支持复制功能");
             }
             document.body.removeChild(input);
             alert("已复制地址，赶紧粘贴发送给小伙伴吧！")

@@ -42,6 +42,9 @@ ul, ol { list-style: none; }
     fill: currentColor;
     overflow: hidden;
  }
+ [v-cloak] {
+    display: none;
+  }
 #app{
     margin: 50px auto;
     background: #303235;

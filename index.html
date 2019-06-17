@@ -46,9 +46,9 @@
                 </li>
             </ul>
         </div>
-        <div id="showall" ref="showall">
+        <div v-show="showorhide" id="showall" ref="showall">
             <div class="showt" ref="showt">
-                你完蛋了，你这个菜鸟！
+                {{showwords}}
             </div>
             <div class="showz">
                 <div @click="newgame">重玩</div>

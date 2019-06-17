@@ -16,6 +16,8 @@ let mv= new Vue({
             calculanum:0,//用于计算
             timer:null,//dingshiqi
             bgurl:"",//背景图
+            showorhide:false,//显示吗
+            showwords:"你完蛋了，你个菜鸟！"
         }
     },
     watch:{
@@ -35,8 +37,8 @@ let mv= new Vue({
             if(val==this.thunnum){
                 clearInterval(this.timer);//停止计时
                 this.isok=true;//不能再点击了
-                this.$refs.showall.style.display="block";
-                this.$refs.showt.innerHTML="恭喜你，获得了胜利";
+                this.showorhide=true;
+                this.showwords="恭喜你，获得了胜利";
             }
         },
         bgurl(val,oldval){
@@ -58,7 +60,7 @@ let mv= new Vue({
             this.isok=false;//重置允许点击
         },
         newgame(){//点击笑脸或者重玩开始新的游戏
-            this.$refs.showall.style.display="none";
+            this.showorhide=false;
             this.initdata(this.liv);
             this.toinitstyle();//重置样式
             clearInterval(this.timer);
@@ -75,8 +77,8 @@ let mv= new Vue({
                 clearInterval(this.timer);//停止计时
                 this.showthunall();//显示所有地雷
                 this.isok=true;//不能再点击了
-                this.$refs.showall.style.display="block";//告诉用户已经失败了
-                this.$refs.showt.innerHTML="你完蛋了，你这个菜鸟！";
+                this.showorhide=true;
+                this.showwords="你完蛋了，你这个菜鸟！";
             }else{//不是雷的时候
                 this.calcula(index,colindex);//算
                 ele.className ="calculanum"+this.calculanum;
@@ -166,7 +168,6 @@ let mv= new Vue({
             }
             let rand = parseInt(Math.random()*5); //随机改个背景
             this.bgurl="url(./image/bg"+rand+".jpg)";
-            console.log(this.bgurl)
         },
         showthunall(){//游戏失败显示所有雷
             for(let i=0;i<this.thunline;i++){
@@ -233,9 +234,8 @@ let mv= new Vue({
             this.$refs.showall.style.display="none";
         },
 
-        //关于好看的样式
+        //关于好看的样式,其实可以直接在底下放个图片，格子留空也可以做到这个效果，性能更好，不过不改了
         stylebuti(){
-            console.log(0)
             let numx=0;
             let numy=0;
             for(let i=0;i<this.thunline;i++){
@@ -243,8 +243,6 @@ let mv= new Vue({
                     if(this.$refs.thunlist[i*this.thuncol+j].className==""){
                         numx=-36*i;
                         numy=-36*j;
-                        console.log(numx);
-                        console.log(numy);
                         this.$refs.thunlist[i*this.thuncol+j].style.backgroundPosition= numy+"px" +" "+ numx+"px";
                     }else{
                         this.$refs.thunlist[i*this.thuncol+j].style.backgroundPosition= "0px 0px";
